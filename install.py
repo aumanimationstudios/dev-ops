@@ -18,7 +18,7 @@ masterdir = os.path.join(configdir,"master")
 slavedir = os.path.join(configdir,"slave")
 
 
-supervisorpath = "/etc/supervisor/conf.d/"
+supervisorpath = "/etc/supervisor.d/"
 installdir = "/opt/dev-ops"
 states_path = "/srv/dev-ops/states/"
 events_root = "/srv/dev-ops/events/"
@@ -40,7 +40,7 @@ parser.add_argument("--id",dest="id",help="id of the machine if you dont want to
 args = parser.parse_args()
 
 
-gitclone = "cd /opt/ ; git clone https://github.com/shrinidhi666/dev-ops.git ;cd /opt/dev-ops; git checkout master; cd -"
+gitclone = "cd /opt/ ; git clone https://github.com/aumanimationstudios/dev-ops.git ;cd /opt/dev-ops; git checkout archlinux-py2; cd -"
 gitpull =  "cd /opt/dev-ops/ ; git pull"
 
 def gitupdate():
